@@ -1,13 +1,18 @@
 [tool.poetry]
 name = "okserve"
-version = "0.1.0"
+version = "0.1.1"
 description = ""
 authors = ["Jeroen Bos <jeroenbos@live.nl>"]
 readme = "README.md"
 
 [tool.poetry.dependencies]
 python = "^3.11"
+fastapi = "^0.100.1"
 
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.4.0"
+black = "^23.7.0"
+isort = "^5.12.0"
 
 [build-system]
 requires = ["poetry-core"]
